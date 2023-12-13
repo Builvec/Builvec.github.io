@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loop through object</title>
+<link rel="icon" href="buil_w.svg">
+<link rel="stylesheet" href="obj.css">
+<script src="obj.js"></script>
+</head>
+
+<body onload="onRefresh(event)">
+	<section class="start-container-disN">
+		<div class="start-container">
+			<figure class="start-logo-container">
+				<img class="start-logo" src="builvec_b.svg">
+			</figure>
+
+			<form class="start-input-container">
+				<input class="start-input" type="text" placeholder="Your name" oninput="startDisplay()">
+				</input>
+			</form>
+		</div>
+	</section>
+	
+	<section class="welcome-main-container-disN">
+		<div class="welcome-container">
+				<h2 class="welcome-name">
+					Hi <span class="start-input-value-wel"></span>,
+				</h2>
+
+			<p class="welcome-message"> 
+			Welcome to <span>Builvec</span>.
+			</p >
+		</div>
+	</section>
+
+	<header class="header-main-container-disN">
+		<div class="header-container">
+			<figure class="builvec-logo-container">
+				<img class="builvec-logo"
+				src="builvec_b.svg" style="width: 100;">
+			</figure>
+		</div>
+</header>
+
+	<main class="MAIN-disN" onload = onRefreshMain()>
+			<section class="main">
+				
+				<div class="main__sub1">
+					<form class="main__input-container">
+							<input class="main__input" type="text" placeholder="Member"
+							onkeydown="builCheckEnter(event)"
+							oninput="mainInputEmpty(event)">
+					</form>
+
+					<div class="main__search-container">
+							<button class="main__about-button"
+							onclick="builCheck()";>
+									About
+							</button>
+					</div>
+				</div>
+
+				<article class="main__sub2" >
+					<p class="main__text-result"></p>
+				</article>
+			</section>
+	</main>
+
+</body>
+</html>
